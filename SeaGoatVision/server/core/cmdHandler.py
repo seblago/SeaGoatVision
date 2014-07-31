@@ -389,6 +389,10 @@ class CmdHandler:
         rec_thread.start()
         return True
 
+    def get_default_media_selected(self):
+        return self.config.get_default_media_selected()
+
+
     #
     # OBSERVER  #################################
     #

@@ -55,6 +55,8 @@ class WinMedia(QtCore.QObject):
 
         self.dct_media = None
         self.last_selected_media = config.default_media_selected
+        if not self.last_selected_media:
+            self.last_selected_media = self.controller.get_default_media_selected()
 
         self.last_value_frame = 0
         self.max_frame = 0

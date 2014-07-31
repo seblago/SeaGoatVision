@@ -144,6 +144,10 @@ class Configuration(object):
         return self._get_conf("cmd_on_start",
                               self.public_config.cmd_on_start)
 
+    def get_default_media_selected(self):
+        return self._get_conf("default_media_selected",
+                              self.public_config.default_media_selected)
+
     # Filterchain
     def list_filterchain(self):
         if not os.path.isdir(self.dir_filterchain):
